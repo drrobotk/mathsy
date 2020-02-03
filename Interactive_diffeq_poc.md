@@ -14,7 +14,7 @@ To this end, I have created a Mathematica notebook from scratch (see cancer.nb) 
 
 Here the user can visualise how the growth increases over time, as well as change the parameters such as the initial value or growth rate using the sliders which provide interactivity.
 
-There are many other demonstrations available online: https://demonstrations.wolfram.com/
+There are many other demonstrations available online. 
 
 Instead of reinventing the wheel, it may be more efficient to use or improve on these demonstrations. 
 
