@@ -81,29 +81,3 @@ The symmetry algebra also undergoes enlargement,
 Index and Killing vectors to find the answers,
 Analyse the geometry from the conditions to unmask them.
 </pre>
-
-
-## Physical
-
-<pre>
-Einstein merked it when he said light was constant,
-No body heard it they dismissed it as nonsense,
-Maxwell's equations describe electromagnetism,
-Light was constant there Newton's equation had some flaw in em,
-In the Newtonian viewpoint time is absolute,
-Turned out it was wrong but therein lies the truth,
-Time is relative for every intertial frame of reference,
-You might leave through the door but to me its still the entrance,
-The faster you go the more time slows down,
-Physical principles make the world go round,
-Energy and mass turned out to be one in the same,
-Starlight bent by the mass of the sun puts Newton to shame,
-An increase in speed just makes you get more heavier,
-Heavy bodys bend spacetime in a finite area,
-At the speed of light your mass would increase to infinity,
-Appreciate the facts dont ever try to limit me,
-Faster than light makes you travel to the past,
-Make you want to sit back again in your class,
-Impossible by the continous nature of velocity,
-Man will never give up as you can see historically.
-</pre>
