@@ -2,7 +2,7 @@
 
 ## Mathematica worksheets
 
-Mathematica can be used to create interactive demonstrations of particular concepts related in mathematics and physics, including modelling phenomena and creating simulations. 
+Mathematica can be used to create interactive demonstrations of particular concepts in mathematics and physics, including modelling phenomena and creating simulations. 
 
 In the short essay on differential equations, we looked at exponential growth in the context of modelling cancer. 
 
