@@ -1,0 +1,247 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9973,        239]
+NotebookOptionsPosition[      9453,        222]
+NotebookOutlinePosition[      9796,        237]
+CellTagsIndexPosition[      9753,        234]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"len", "=", "300"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"timeSeries", "=", 
+     RowBox[{"NestList", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"r", " ", "#", " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", "#"}], ")"}]}], "&"}], ",", "x0", ",", "len"}], 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"GraphicsGrid", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"ListPlot", "[", 
+          RowBox[{"timeSeries", ",", 
+           RowBox[{"PlotLabel", "\[Rule]", "\"\<time series\>\""}], ",", 
+           RowBox[{"AxesLabel", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"t", ",", "x"}], "}"}]}], ",", 
+           RowBox[{"PlotRange", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "1"}], "}"}]}], ",", 
+           RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+           RowBox[{"ImagePadding", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"25", ",", "15"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"25", ",", "35"}], "}"}]}], "}"}]}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Show", "[", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"Plot", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"x", ",", 
+               RowBox[{"r", " ", "x", " ", 
+                RowBox[{"(", 
+                 RowBox[{"1", "-", "x"}], ")"}]}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+             RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"ListPlot", "[", 
+            RowBox[{
+             RowBox[{"Partition", "[", 
+              RowBox[{
+               RowBox[{"ReplacePart", "[", 
+                RowBox[{
+                 RowBox[{"Drop", "[", 
+                  RowBox[{
+                   RowBox[{"Drop", "[", 
+                    RowBox[{
+                    RowBox[{"Flatten", "[", 
+                    RowBox[{"Transpose", "[", 
+                    RowBox[{"Table", "[", 
+                    RowBox[{"timeSeries", ",", 
+                    RowBox[{"{", "4", "}"}]}], "]"}], "]"}], "]"}], ",", 
+                    "1"}], "]"}], ",", 
+                   RowBox[{"-", "3"}]}], "]"}], ",", 
+                 RowBox[{"2", "\[Rule]", "0"}]}], "]"}], ",", "2"}], "]"}], 
+             ",", 
+             RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+             RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"PlotLabel", "\[Rule]", "\"\<cobweb plot\>\""}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"AxesLabel", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{
+             "\"\<\!\(\*SubscriptBox[\(x\), \(t\)]\)\>\"", ",", 
+              "\"\<\!\(\*SubscriptBox[\(x\), \(t + 1\)]\)\>\""}], "}"}]}], 
+           ",", "\[IndentingNewLine]", 
+           RowBox[{"AspectRatio", "\[Rule]", "Automatic"}], ",", 
+           RowBox[{"ImagePadding", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"25", ",", "15"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"25", ",", "35"}], "}"}]}], "}"}]}]}], "]"}]}], "}"}], 
+       "}"}], ",", 
+      RowBox[{"ImageSize", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"500", ",", "Automatic"}], "}"}]}]}], "]"}]}], 
+   "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"r", ",", "2", ",", "\"\<Growth rate: r\>\""}], "}"}], ",", "0",
+      ",", "4", ",", "0.1", ",", " ", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], 
+   "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "x0", ",", "0.1", ",", 
+       "\"\<Intial value: \!\(\*SubscriptBox[\(x\), \(0\)]\)\>\""}], "}"}], 
+     ",", "0", ",", "1", ",", "0.1", ",", " ", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   RowBox[{"TrackedSymbols", "\[RuleDelayed]", "Manipulate"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.7899044967687197`*^9, 3.789904563389482*^9}, {
+   3.7899048687962065`*^9, 3.7899048696127377`*^9}, {3.7899050801667967`*^9, 
+   3.789905084522297*^9}, {3.789905117449399*^9, 3.7899051204326887`*^9}, {
+   3.789905156852786*^9, 3.7899051724748216`*^9}, {3.7899052965286255`*^9, 
+   3.789905322927474*^9}, {3.789905384172325*^9, 3.7899053843862033`*^9}, {
+   3.789905444686598*^9, 3.7899054896138115`*^9}, 3.7899057135116653`*^9},
+ CellLabel->"In[18]:=",ExpressionUUID->"f637157f-6a70-4a0c-b487-fe347c586e45"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`r$$ = 2, $CellContext`x0$$ = 0.1, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`r$$], 2, "Growth rate: r"}, 0, 4, 0.1}, {{
+       Hold[$CellContext`x0$$], 0.1, 
+       "Intial value: \!\(\*SubscriptBox[\(x\), \(0\)]\)"}, 0, 1, 0.1}}, 
+    Typeset`size$$ = {500., {104., 109.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`r$98932$$ = 0, $CellContext`x0$98933$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`r$$ = 2, $CellContext`x0$$ = 0.1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`r$$, $CellContext`r$98932$$, 0], 
+        Hold[$CellContext`x0$$, $CellContext`x0$98933$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> ($CellContext`len = 300; $CellContext`timeSeries = 
+        NestList[$CellContext`r$$ # (
+           1 - #)& , $CellContext`x0$$, $CellContext`len]; GraphicsGrid[{{
+           
+           ListPlot[$CellContext`timeSeries, PlotLabel -> "time series", 
+            AxesLabel -> {$CellContext`t, $CellContext`x}, 
+            PlotRange -> {0, 1}, Joined -> True, 
+            ImagePadding -> {{25, 15}, {25, 35}}], 
+           Show[
+            
+            Plot[{$CellContext`x, $CellContext`r$$ $CellContext`x (
+               1 - $CellContext`x)}, {$CellContext`x, 0, 1}, PlotRange -> 
+             All], 
+            ListPlot[
+             Partition[
+              ReplacePart[
+               Drop[
+                Drop[
+                 Flatten[
+                  Transpose[
+                   Table[$CellContext`timeSeries, {4}]]], 1], -3], 2 -> 0], 
+              2], Joined -> True, PlotRange -> All], PlotLabel -> 
+            "cobweb plot", 
+            AxesLabel -> {
+             "\!\(\*SubscriptBox[\(x\), \(t\)]\)", 
+              "\!\(\*SubscriptBox[\(x\), \(t + 1\)]\)"}, AspectRatio -> 
+            Automatic, ImagePadding -> {{25, 15}, {25, 35}}]}}, 
+         ImageSize -> {500, Automatic}]), 
+      "Specifications" :> {{{$CellContext`r$$, 2, "Growth rate: r"}, 0, 4, 
+         0.1, Appearance -> 
+         "Labeled"}, {{$CellContext`x0$$, 0.1, 
+          "Intial value: \!\(\*SubscriptBox[\(x\), \(0\)]\)"}, 0, 1, 0.1, 
+         Appearance -> "Labeled"}}, 
+      "Options" :> {TrackedSymbols :> Manipulate}, "DefaultOptions" :> {}],
+     ImageSizeCache->{551., {165., 171.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.789904518795079*^9, 3.789904537324444*^9}, 
+   3.7899045869549575`*^9, 3.78990487377135*^9, {3.789905121331173*^9, 
+   3.789905176247657*^9}, {3.7899052981916695`*^9, 3.789905323997862*^9}, {
+   3.7899053600071945`*^9, 3.789905387857211*^9}, {3.7899054505202475`*^9, 
+   3.7899054685489025`*^9}, 3.789905501947733*^9, 3.789905716038216*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"cf71cca3-bbaf-439a-bcea-1ef61e948acc"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.789904568687442*^9, 3.7899045752606688`*^9}, {
+   3.7899048645186634`*^9, 3.789904864982394*^9}, {3.7899054940842466`*^9, 
+   3.789905499265272*^9}, 3.789905708632465*^9},
+ CellLabel->"In[19]:=",ExpressionUUID->"cf54e24f-2e97-4652-9c9a-afe045dfb955"]
+},
+WindowSize->{1536, 781},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4879, 115, 276, "Input",ExpressionUUID->"f637157f-6a70-4a0c-b487-fe347c586e45"],
+Cell[5462, 139, 3673, 74, 355, "Output",ExpressionUUID->"cf71cca3-bbaf-439a-bcea-1ef61e948acc"]
+}, Open  ]],
+Cell[9150, 216, 299, 4, 28, "Input",ExpressionUUID->"cf54e24f-2e97-4652-9c9a-afe045dfb955"]
+}
+]
+*)
+
