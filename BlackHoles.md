@@ -20,7 +20,7 @@ At the centre of our own galaxy, the milky way, the supermassive black hole is c
 
 | ![sagittarius_a*](https://user-images.githubusercontent.com/51001263/187797376-97e93520-228f-472f-80f5-106860f2ceae.jpg) | 
 |:--:| 
-| *The second ever image of a black hole, Sagittarius A*, at the heart of the our galaxy taken in April 2019.* |
+| *The second ever image of a black hole, Sagittarius A*, at the heart of the our galaxy taken in May 2022.* |
 
 The first person to come up with the idea of a black hole was John Mitchell in 1783, followed (independently) by Pierre-Simon Laplace in 1796. These prototypical black objects, called 'dark stars', were considered from the point of view of Newton's law of motion and gravitation. 
 
