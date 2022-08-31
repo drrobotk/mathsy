@@ -18,7 +18,7 @@ At the centre of our own galaxy, the milky way, the supermassive black hole is c
 |:--:| 
 | *Orbit of stars around the central black hole, Sagittarius A*.* |
 
-| ![m87]([https://user-images.githubusercontent.com/51001263/73227201-9d52a780-416a-11ea-9b9c-45c37920293d.png](https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202205/MIT-EHT-01-PRESS_0.jpg?itok=405Q_KCo)) | 
+| ![sagittarius_a*](https://user-images.githubusercontent.com/51001263/187797376-97e93520-228f-472f-80f5-106860f2ceae.jpg) | 
 |:--:| 
 | *The second ever image of a black hole, Sagittarius A*, at the heart of the our galaxy taken in April 2019.* |
 
